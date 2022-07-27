@@ -1,0 +1,46 @@
+{
+  "content":{
+    "projects": [
+      {
+        "id": "project-1",
+        "title": "the truth between the lines",
+        "year": "2019",
+        "categories": ["ui", "ux", "development"],
+        "subject": "Iconsulting",
+        "description": "A longform designed for the client Iconsulting. The truth between the lines analyzes the phenomenon of fake news. This subject was explored in five different chapter: the first four explain the theories and provide key examples that happened in real life. The fifth and last chapter presents a possible solution provided by the client to avoid the proliferation of fake news.<br/>In this project I worked on the visual design aspects of the longform (interface, choosing the audio and visual material, interactive infographics) as well as the development and publishing of the longform."
+      },
+      {
+        "id": "project-2",
+        "title": "Progetto 2",
+        "year": "2018-19",
+        "categories": ["ui", "ux"],
+        "subject": "final thesis",
+        "description": "Cillum aute deserunt consectetur minim quis ad sint labore cupidatat. Qui pariatur non laborum sint ut eiusmod ullamco enim enim adipisicing. Magna aliquip aliquip eu eu veniam. Do deserunt est sint consequat et. Voluptate consequat fugiat cillum deserunt consectetur non consectetur velit. Eiusmod exercitation occaecat qui laborum. Id sint consectetur consectetur eiusmod labore nostrud reprehenderit quis esse adipisicing sint quis eu."
+      },
+      {
+        "id": "project-3",
+        "title": "Progetto 3",
+        "year": "2018-19",
+        "categories": ["ui", "ux"],
+        "subject": "final thesis",
+        "description": "Cillum aute deserunt consectetur minim quis ad sint labore cupidatat. Qui pariatur non laborum sint ut eiusmod ullamco enim enim adipisicing. Magna aliquip aliquip eu eu veniam. Do deserunt est sint consequat et. Voluptate consequat fugiat cillum deserunt consectetur non consectetur velit. Eiusmod exercitation occaecat qui laborum. Id sint consectetur consectetur eiusmod labore nostrud reprehenderit quis esse adipisicing sint quis eu."
+      },
+      {
+        "id": "project-4",
+        "title": "Progetto 4",
+        "year": "2018-19",
+        "categories": ["ui", "ux"],
+        "subject": "final thesis",
+        "description": "Cillum aute deserunt consectetur minim quis ad sint labore cupidatat. Qui pariatur non laborum sint ut eiusmod ullamco enim enim adipisicing. Magna aliquip aliquip eu eu veniam. Do deserunt est sint consequat et. Voluptate consequat fugiat cillum deserunt consectetur non consectetur velit. Eiusmod exercitation occaecat qui laborum. Id sint consectetur consectetur eiusmod labore nostrud reprehenderit quis esse adipisicing sint quis eu."
+      },
+      {
+        "id": "project-5",
+        "title": "Progetto 5",
+        "year": "2018-19",
+        "categories": ["ui", "ux"],
+        "subject": "final thesis",
+        "description": "Cillum aute deserunt consectetur minim quis ad sint labore cupidatat. Qui pariatur non laborum sint ut eiusmod ullamco enim enim adipisicing. Magna aliquip aliquip eu eu veniam. Do deserunt est sint consequat et. Voluptate consequat fugiat cillum deserunt consectetur non consectetur velit. Eiusmod exercitation occaecat qui laborum. Id sint consectetur consectetur eiusmod labore nostrud reprehenderit quis esse adipisicing sint quis eu."
+      }
+    ]
+  }
+}

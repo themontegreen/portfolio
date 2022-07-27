@@ -1,0 +1,76 @@
+{
+  "content":{
+    "projects": [
+      {
+        "id": "project-6",
+        "title": "educazione finanziaria",
+        "year": "2021",
+        "categories": ["visual", "ui", "dev"],
+        "subject": "BPER banca",
+        "description": "A longform fully designed and developed for the client BPER banca, an italian bank. It tackles the theme of financial education, targeted towards their female audience and clientele.<br/>The longform presents data gathered from open databases and visualized using different types of data visualization best practices and common guidelines to allow an easier understanding of the information and data.<br/><a style='font-weight: 900; color: black;' href='https://wealth.bper.it/longform-donna-finanza' target='_blank'>Visit project</a>",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg"],
+        "cover": "copertina.jpeg"
+      },
+      {
+        "id": "project-0",
+        "title": "themontegreen",
+        "year": "2018-19",
+        "categories": ["branding", "graphic"],
+        "subject": "personal",
+        "description": "Playing with a pun from my surname, I experimented and created my own self branding project and built a visual design system. This project was done during my last year of university studying Communication Design, both as a mean to experiment, but also to synthesize everything I learned throughout the three years spent working on my bachelor’s degree.<br/><br/>The visual and graphic choices took inspiration from graphic design trends in Europe during the 1950s and 1960s, most specifically to the graphic styles that became popular in Germany, Italy and Switzerland, with a strong focus in typography.",
+        "media": ["file-1.jpg", "file-2.png", "file-3.png"],
+        "cover": "copertina.png"
+      },
+      {
+        "id": "project-1",
+        "title": "the truth between the lines",
+        "year": "2019",
+        "categories": ["ui", "ux", "dev"],
+        "subject": "Iconsulting",
+        "description": "A longform designed for the client Iconsulting. The truth between the lines analyzes the phenomenon of fake news. This subject was explored in five different chapter: the first four explain the theories and provide key examples that happened in real life. The fifth and last chapter presents a possible solution provided by the client to avoid the proliferation of fake news.<br/><br/>In this project I worked on the visual design aspects of the longform (interface, choosing the audio and visual material, interactive infographics) as well as the development and publishing of the longform.<br/><br/><a style='font-weight: 900; color: black;' href='https://fakenews.iconsulting.biz/' target='_blank'>Visit website</a>",
+        "media": ["file-1.jpg"],
+        "cover": "copertina.jpg"
+      },
+      {
+        "id": "project-2",
+        "title": "sophie's hyperspace",
+        "year": "2021",
+        "categories": ["dataviz"],
+        "subject": "personal",
+        "description": "This data visualization project is a visual representation of the complexity of the album 'OIL OF EVERY PEARL'S UN-INSIDES' by SOPHIE. Following the accident that ended her life prematurely on January 2021, she remains one of the forefront artists in the Pc Music and Hyperpop universe, contributed to pushing the boundaries of EDM music and Pop.<br/>Using the Spotify API I extracted the track analysis data of all 9 tracks to create a visualization that represented most SOPHIE's aesthetic and artistry. The 9 tracks have been envisioned as 9 'hypergems' that are a part of a single cohesive 'hyperspace', representative of SOPHIE's approach to fluidity, multiform and complex worlds. Each single hypergem is a glyph, built on 4 different axis that fully represent the complexity of the EDM track, in a yet anamorphic shape that is created digitally using four digital parameters dictated by an artificial intelligence algorythm.<br/><br/><a style='font-weight: 900; color: black;' href='https://www.behance.net/gallery/117451391/OIL-OF-EVERY-PEARLS-UN-INSIDES-SOPHIESHYPERSPACE' target='_blank'>Visit project</a>",
+        "media": ["file-1.jpg"],
+        "cover": "copertina.jpg"
+      },
+      {
+        "id": "project-3",
+        "title": "bauhausbücher",
+        "year": "2019",
+        "categories": ["dataviz"],
+        "subject": "university",
+        "description": "The final exam of the course <a style='color: black; font-weight: bold;' target='_null' href='https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2019&k_cf=19&k_corso_la=1088&k_indir=***&codDescr=054989&lang=EN&semestre=1&anno_corso=3&idItemOfferta=145648&idRiga=249737'>Aesthetics of things: Living Communicating Producing</a> called for a re-interpretation of the Bauhaus school in a modern-contemporary viewpoint. I decided to tackle the project by focusing on a series of books curated by the school called “Bauhausbücher”, published from 1923 to 1930 and part of a collaboration between L. M. Nagy and W. Gropius.<br/>The re-interpretation consisted of transfering the medium, from paper to digital (web). The key concept was the idea of responsive design, which guided the rebranding and web design phase.",
+        "media": ["file-1.jpg","file-2.jpg", "file-3.jpg", "file-4.jpg", "file-5.png", "file-6.png"],
+        "cover": "copertina.jpg"
+      },
+      {
+        "id": "project-4",
+        "title": "poliedro",
+        "year": "2019",
+        "categories": ["branding", "visual", "ux"],
+        "subject": "final synthesis studio",
+        "description": "While working on my bachelor’s degree I was part of the initiatives of the university association <a target='_blank' style='font-weight: 900; color: black;' href='https://www.instagram.com/poliedro.polimi'>Poliedro</a>, an association that focused on various LGBTQ+ centered themes.<br/>Aside from being an active member (until September 2019), I worked on some of the communication and promotional materials of the different seminars and meetings. This included physical printed materials (posters that were shown around both campus Leonardo and campus Bovisa) and social media content (on Facebook and Instagram).<br/><br/>The design aspect of these materials always started with a preliminary research on the theme of the individual seminar. The visual language chosen was both photographic and illustrative, with a strong focus on typography.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg"],
+        "cover": "copertina.jpg"
+      },
+      {
+        "id": "project-5",
+        "title": "vulnerabile",
+        "year": "2019",
+        "categories": ["branding", "graphic"],
+        "subject": "history of contemp. art",
+        "description": "A visual research tackling the theme of vulnerability represented by the male body. The male body has always been associated with power, success and firmness, both physical and psychological. This project was my take on the opposite idea.<br/>I believe men can show vulnerability, and should show it more often instead of hiding it.<br/>Vulnerability is not a sign of weakness, rather it is a sign of unfathomable power and emotional resilience.<br/><br/>The project explores this theme by featuring photographs from contemporary photographer and artists such as Nan Goldin, Robert Mapplethorpe, and Fabio Da Motta.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg","file-5.jpg", "file-6.jpg", "file-7.jpg", "file-8.jpg", "file-9.jpg"],
+        "cover": "copertina.jpg"
+      }
+    ]
+  }
+}
