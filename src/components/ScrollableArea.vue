@@ -4,7 +4,10 @@
       <router-link
         v-for="(project,p) in projects"
         class="project"
-        :to="{name: 'project', params: { id: project.n }}"
+        :to="{name: 'project', params: { 
+          id: p,
+          prova: 'ciao'
+        }}"
         :key="p"
       >
         <div

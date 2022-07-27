@@ -1,7 +1,6 @@
 <template>
   <div class="project-top-bar">
-    Project view {{$route.params.id}}
-    <ProjectTopBar/>
+    <ProjectTopBar :title="title"/>
   </div>
 </template>
 
@@ -10,12 +9,14 @@ import ProjectTopBar from '../components/ProjectTopBar.vue';
 export default {
   data(){
     return{
+      title: String
     }
   },
   components: {
     ProjectTopBar
   },
-  mounted(){
+  created(){
+    this.title = this.$content[this.$lang].projects[this.$route.params.id].title
   }
 }
 </script>
