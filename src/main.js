@@ -6,4 +6,9 @@ import en from "./assets/content_EN.json";
 
 const app = createApp(App)
 app.use(router)
+app.config.globalProperties.$content = {
+  'it': it.content,
+  'en': en.content
+}
+app.config.globalProperties.$lang = 'it'
 app.mount('#app')

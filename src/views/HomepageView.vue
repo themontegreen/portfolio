@@ -19,6 +19,7 @@ export default {
     MenuFooter
   },
   mounted(){
+    console.log(this.$content[this.$lang])
   }
 }
 </script>
