@@ -3,6 +3,7 @@
     "hero_paragraph": "Milan based designer+developer focused in the design and development process of visual design systems, digital user experiences and interactive data-driven content.",
     "projects": [
       {
+        "n": 6,
         "id": "project-6",
         "title": "educazione finanziaria",
         "year": "2021",
@@ -13,6 +14,7 @@
         "cover": "copertina.jpeg"
       },
       {
+        "n": 0,
         "id": "project-0",
         "title": "themontegreen",
         "year": "2018-19",
@@ -23,6 +25,7 @@
         "cover": "copertina.png"
       },
       {
+        "n": 1,
         "id": "project-1",
         "title": "the truth between the lines",
         "year": "2019",
@@ -33,6 +36,7 @@
         "cover": "copertina.jpg"
       },
       {
+        "n": 2,
         "id": "project-2",
         "title": "sophie's hyperspace",
         "year": "2021",
@@ -43,6 +47,7 @@
         "cover": "copertina.jpg"
       },
       {
+        "n": 3,
         "id": "project-3",
         "title": "bauhausbücher",
         "year": "2019",
@@ -53,6 +58,7 @@
         "cover": "copertina.jpg"
       },
       {
+        "n": 4,
         "id": "project-4",
         "title": "poliedro",
         "year": "2019",
@@ -63,6 +69,7 @@
         "cover": "copertina.jpg"
       },
       {
+        "n": 5,
         "id": "project-5",
         "title": "vulnerabile",
         "year": "2019",

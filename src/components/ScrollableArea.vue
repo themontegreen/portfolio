@@ -1,17 +1,17 @@
 <template>
   <div class="scrollable-area-container">
     <div class="projects">
-      <div
-      v-for="(project,p) in projects"
+      <router-link
+        v-for="(project,p) in projects"
         class="project"
+        :to="{name: 'project', params: { id: project.n }}"
         :key="p"
       >
-      <div
-          class="project-container"
-          :style="`background-image: url('/img/projects/`+project.id+`/`+project.cover+`'); background-size:cover;background-position: center;`"
-        >
-        </div>
-      </div>
+        <div
+            class="project-container"
+            :style="`background-image: url('/img/projects/`+project.id+`/`+project.cover+`'); background-size:cover;background-position: center;`"
+        />
+      </router-link>
     </div>
   </div>
 </template>
