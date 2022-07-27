@@ -1,8 +1,21 @@
 <template>
-  <div class="hero-paragraph">
-    Milan based designer+developer focused in the design and development process of visual design systems, digital user experiences and interactive data-driven content. 
-  </div>
+  <div class="hero-paragraph" v-text="text"/>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      text: String
+    }
+  },
+  components: {
+  },
+  mounted(){
+    this.text = this.$content[this.$lang].hero_paragraph
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/colors.scss';
