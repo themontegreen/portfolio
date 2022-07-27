@@ -1,5 +1,9 @@
 <template>
   <div class="homepage-container">
+    <div class="overlay-message">
+      <div class="text">For an optimal experience, view this page in portrait mode<br/>Simply put, rotate your phone :)
+      </div>
+    </div>
     <div class="fixed-content">
       <HeroParagraph/>
       <ScrollableArea/>
