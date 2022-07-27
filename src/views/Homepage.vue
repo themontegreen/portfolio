@@ -1,3 +1,5 @@
 <template>
-  homepage
+  Header Intro
+  Progetti
+  Menu Footer
 </template>
