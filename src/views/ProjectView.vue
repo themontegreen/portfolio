@@ -3,7 +3,7 @@
     <ProjectTopBar :title="title"/>
     <div class="project-info">
       <div class="container-carousel">
-        carousel
+        <ProjectShowcase :media="media"/>
       </div>
       <div class="project-content">
         <div class="info-header">
@@ -43,12 +43,12 @@ export default {
     ProjectShowcase
   },
   created(){
-    this.title = this.$content[this.$lang].projects[this.$route.params.id].title
-    this.year = this.$content[this.$lang].projects[this.$route.params.id].year
-    this.categories = this.$content[this.$lang].projects[this.$route.params.id].categories
-    this.subject = this.$content[this.$lang].projects[this.$route.params.id].subject
-    this.paragraph = this.$content[this.$lang].projects[this.$route.params.id].description
-    this.media = this.$content[this.$lang].projects[this.$route.params.id].media
+    this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
+    this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
+    this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
+    this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
+    this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
+    this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
   }
 }
 </script>
