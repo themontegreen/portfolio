@@ -1,7 +1,7 @@
 <template>
   <div class="project-showcase">
     <div class="media">
-      
+      <img :src="'/img/projects/'+id+'/'+media[0]" alt="">
     </div>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
   name: "ProjectShowcase",
-  props: ["media"],
+  props: ["id","media"],
   data(){
     return {
     }
@@ -27,34 +27,13 @@ export default {
 @import './src/assets/scss/fonts.scss';
 .project-showcase{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
   .media{
-    position: relative;
-    width: 100%;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 1200px){
-}
-
-/* Mobile (Landscape) */
-@media screen and (max-width: 1200px) and (orientation: landscape){
-  .project-showcase{
-    .media{
-    }
-  }
-}
-
-/* 1920 x 1080 */
-@media screen and (min-width: 1920px) and (orientation: landscape){
-  .project-showcase{
-    .media{
+    img{
+      position: absolute;
+      height: 100%;
     }
   }
 }

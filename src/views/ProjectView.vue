@@ -3,7 +3,7 @@
     <ProjectTopBar :title="title"/>
     <div class="project-info">
       <div class="container-carousel">
-        <ProjectShowcase :media="media"/>
+        <ProjectShowcase :id="id" :media="media"/>
       </div>
       <div class="project-content">
         <div class="info-header">
@@ -14,6 +14,7 @@
             </span>
           </div>
           <div class="info" v-text="subject"></div>
+          <div class="link">link</div>
         </div>
         <div class="container-paragraph">
           <div class="paragraph" v-html="paragraph">
@@ -30,6 +31,7 @@ import ProjectShowcase from '../components/ProjectShowcase.vue'
 export default {
   data(){
     return{
+      id: String,
       title: String,
       year: String,
       categories: Array,
@@ -43,6 +45,7 @@ export default {
     ProjectShowcase
   },
   created(){
+    this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
     this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
     this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
     this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
@@ -91,10 +94,20 @@ export default {
           justify-content: center;
           align-items: center;
           border-right: 1px solid $true-black;
+          padding: 5px;
           @include title-small;
-          &:last-child{
-            border-right: none;
-          }
+        }
+        .link{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid $true-black;
+          border-right: none;
+          background-color: $themontegreen;
+          color: $true-white;
+          padding: 5px;
+          @include title-small;
         }
       }
       .container-paragraph{

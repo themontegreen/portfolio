@@ -39,6 +39,7 @@ export default {
   align-items: center;
   border-bottom: 1px solid $true-black;
   background-color: white;
+  z-index: 1;
   .name-project{
     position: relative;
     display: flex;
