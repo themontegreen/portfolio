@@ -6,3 +6,5 @@ jobs:
     steps:
       - run: echo "show path"
       - run: pwd
+      - run: echo "show content"
+      - run: ls -la
