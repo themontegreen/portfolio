@@ -8,7 +8,7 @@ export default {
   data(){
     return{
       text: String,
-      animationDelay: .3,
+      animationDelay: 0,
       animationDuration: 1.2
     }
   },

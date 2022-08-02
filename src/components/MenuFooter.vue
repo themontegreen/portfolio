@@ -16,7 +16,7 @@ export default {
   data(){
     return{
       links: Array,
-      animationDelay: .7,
+      animationDelay: 0,
       animationDuration: 1.2
     }
   },

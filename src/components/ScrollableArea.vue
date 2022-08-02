@@ -26,8 +26,8 @@ export default {
     return{
       projects: Array,
       animationDelay: 1,
-      animationDuration: 2,
-      staggerDuration: .25
+      animationDuration: 1,
+      staggerDuration: .5
     }
   },
   created(){
