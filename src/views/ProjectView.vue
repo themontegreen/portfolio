@@ -141,7 +141,12 @@ export default {
           background-color: $themontegreen;
           color: $true-white;
           padding: 5px;
+          text-decoration: none;
           @include title-small;
+        }
+        .link:hover,:active{
+          background-color: $true-black;
+          color: $true-white;
         }
       }
       .container-paragraph{
