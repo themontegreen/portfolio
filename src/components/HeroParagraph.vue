@@ -8,12 +8,12 @@ export default {
   data(){
     return{
       text: String,
-      animationDelay: 0,
-      animationDuration: 1.2
+      animationDelay: this.$content[this.$lang].hero_paragraph.animationDelay,
+      animationDuration: this.$content[this.$lang].hero_paragraph.animationDuration
     }
   },
   created(){
-    this.text = this.$content[this.$lang].hero_paragraph
+    this.text = this.$content[this.$lang].hero_paragraph.text
   },
   mounted(){
     this.animate()

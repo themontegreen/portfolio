@@ -1,6 +1,14 @@
 {
   "content":{
-    "hero_paragraph": "Milan based designer+developer focused in the design and development process of visual design systems, digital user experiences and interactive data-driven content.",
+    "loading_intro": {
+      "loadingTime": 2,
+      "delayTime": 1
+    },
+    "hero_paragraph": {
+      "text": "Milan based designer+developer focused in the design and development process of visual design systems, digital user experiences and interactive data-driven content.",
+      "animationDelay": 0,
+      "animationDuration": 1.2
+    },
     "projects": [
       {
         "n": 6,

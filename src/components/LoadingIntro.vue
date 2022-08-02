@@ -9,8 +9,8 @@ import gsap from "gsap";
 export default {
   data(){
     return{
-      loadingTime: 2,
-      delayTime: 1
+      loadingTime: this.$content[this.$lang].loading_intro.loadingTime,
+      delayTime: this.$content[this.$lang].loading_intro.delayTime
     }
   },
   created(){
