@@ -30,6 +30,7 @@
 import ProjectTopBar from '../components/ProjectTopBar.vue'
 import ProjectShowcase from '../components/ProjectShowcase.vue'
 import ProjectBottomBar from '../components/ProjectBottomBar.vue'
+import gsap from "gsap"
 export default {
   data(){
     return{
@@ -40,7 +41,9 @@ export default {
       subject: String,
       paragraph: String,
       media: Array,
-      link: String
+      link: String,
+      animationDelay: .5,
+      animationDuration: 1.5
     }
   },
   components: {
@@ -52,11 +55,15 @@ export default {
     $route (to, from){
       if( to.name == 'project' ){
         this.retrieveData()
+        this.animateRefresh()
       }
     }
   },
   created(){
     this.retrieveData()
+  },
+  mounted(){
+    this.animateLoad()
   },
   methods: {
     retrieveData(){
@@ -84,6 +91,26 @@ export default {
       else{
         this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[0].n } })
       }
+    },
+    animateLoad(){
+      gsap.fromTo(".container-paragraph .paragraph", {
+        autoAlpha: 0
+      },
+      {
+        autoAlpha: 1,
+        duration: this.animationDuration,
+        delay: this.animationDelay
+      })
+    },
+    animateRefresh(){
+      gsap.fromTo(".container-paragraph .paragraph", {
+        autoAlpha: 0
+      },
+      {
+        autoAlpha: 1,
+        duration: this.animationDuration,
+        delay: this.animationDelay
+      })
     }
   }
 }

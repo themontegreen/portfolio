@@ -20,16 +20,36 @@
 </template>
 
 <script>
+import gsap from "gsap";
 export default {
   data(){
     return{
-      projects: Array
+      projects: Array,
+      animationDelay: 1,
+      animationDuration: 2,
+      staggerDuration: .25
     }
   },
-  computed: {
+  created(){
+    this.projects = this.$content[this.$lang].projects
   },
   mounted(){
-    this.projects = this.$content[this.$lang].projects
+    this.animate()
+  },
+  methods: {
+    animate(){
+      gsap.fromTo(".scrollable-area-container .projects .project", {
+        autoAlpha: 0,
+        yPercent: -1
+      },
+      {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: this.animationDuration,
+        delay: this.animationDelay,
+        stagger: this.staggerDuration
+      })
+    }
   }
 }
 </script>

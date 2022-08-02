@@ -3,16 +3,34 @@
 </template>
 
 <script>
+import gsap from "gsap";
 export default {
   data(){
     return{
-      text: String
+      text: String,
+      animationDelay: .3,
+      animationDuration: 1.2
     }
   },
-  components: {
+  created(){
+    this.text = this.$content[this.$lang].hero_paragraph
   },
   mounted(){
-    this.text = this.$content[this.$lang].hero_paragraph
+    this.animate()
+  },
+  methods: {
+    animate(){
+      gsap.fromTo(".hero-paragraph", {
+        autoAlpha: 0,
+        yPercent: -100
+      },
+      {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: this.animationDuration,
+        delay: this.animationDelay
+      })
+    }
   }
 }
 </script>
@@ -26,6 +44,16 @@ export default {
   width: 100vw;
   padding: 16px;
   border-bottom: 1px solid $true-black;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 2s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateY(-100%);
 }
 
 @media screen and (max-width: 767px) {

@@ -11,16 +11,34 @@
 </template>
 
 <script>
+import gsap from "gsap";
 export default {
   data(){
     return{
-      links: Array
+      links: Array,
+      animationDelay: .7,
+      animationDuration: 1.2
     }
   },
-  components: {
+  created(){
+    this.links = this.$content[this.$lang].footer_menu
   },
   mounted(){
-    this.links = this.$content[this.$lang].footer_menu
+    this.animate()
+  },
+  methods: {
+    animate(){
+      gsap.fromTo(".menufooter-container", {
+        autoAlpha: 0,
+        yPercent: 100
+      },
+      {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: this.animationDuration,
+        delay: this.animationDelay
+      })
+    }
   }
 }
 </script>
