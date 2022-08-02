@@ -62,6 +62,9 @@ export default {
       background-color: $true-black;
     }
   }
+  .close-btn:hover,:active{
+    background-color: $true-black;
+  }
 
 }
 </style>
