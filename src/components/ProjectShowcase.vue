@@ -1,7 +1,7 @@
 <template>
   <div class="project-showcase">
     <div class="media">
-      <img :src="'/img/projects/'+id+'/'+media[0]" alt="">
+      <img :src="'./img/projects/'+id+'/'+media[0]" alt="">
     </div>
   </div>
 </template>
