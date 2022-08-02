@@ -26,7 +26,7 @@ export default {
       projects: Array
     }
   },
-  components: {
+  computed: {
   },
   mounted(){
     this.projects = this.$content[this.$lang].projects

@@ -22,12 +22,14 @@
         </div>
       </div>
     </div>
+    <ProjectBottomBar v-on:goToPrevious="previousProject" v-on:goToNext="nextProject"/>
   </div>
 </template>
 
 <script>
 import ProjectTopBar from '../components/ProjectTopBar.vue'
 import ProjectShowcase from '../components/ProjectShowcase.vue'
+import ProjectBottomBar from '../components/ProjectBottomBar.vue'
 export default {
   data(){
     return{
@@ -42,7 +44,21 @@ export default {
   },
   components: {
     ProjectTopBar,
-    ProjectShowcase
+    ProjectShowcase,
+    ProjectBottomBar
+  },
+  watch:{
+    $route (to, from){
+      if( to.name == 'project' ){
+        this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
+        this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
+        this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
+        this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
+        this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
+        this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
+        this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
+      }
+    }
   },
   created(){
     this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
@@ -52,6 +68,19 @@ export default {
     this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
     this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
     this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
+  },
+  methods: {
+    previousProject(){
+      if( this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) > 0 ){
+        this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[(this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) - 1)].n } })
+      }
+      else{
+        this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[ this.$content[this.$lang].projects.length - 1 ].n } })
+      }
+    },
+    nextProject(){
+      console.log('next project')
+    }
   }
 }
 </script>
