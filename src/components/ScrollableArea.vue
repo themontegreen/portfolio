@@ -12,7 +12,7 @@
       >
         <div
             class="project-container"
-            :style="`background-image: url('/img/projects/`+project.id+`/`+project.cover+`'); background-size:cover;background-position: center;`"
+            :style="`background-image: url('./img/projects/`+project.id+`/`+project.cover+`'); background-size:cover;background-position: center;`"
         />
       </router-link>
     </div>
