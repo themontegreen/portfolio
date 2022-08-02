@@ -14,7 +14,7 @@
             </span>
           </div>
           <div class="info" v-text="subject"></div>
-          <div class="link">link</div>
+          <a v-if="link" :href="link" class="link" target="_blank">link</a>
         </div>
         <div class="container-paragraph">
           <div class="paragraph" v-html="paragraph">
@@ -39,7 +39,8 @@ export default {
       categories: Array,
       subject: String,
       paragraph: String,
-      media: Array
+      media: Array,
+      link: String
     }
   },
   components: {
@@ -50,26 +51,24 @@ export default {
   watch:{
     $route (to, from){
       if( to.name == 'project' ){
-        this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
-        this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
-        this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
-        this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
-        this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
-        this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
-        this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
+        this.retrieveData()
       }
     }
   },
   created(){
-    this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
-    this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
-    this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
-    this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
-    this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
-    this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
-    this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
+    this.retrieveData()
   },
   methods: {
+    retrieveData(){
+      this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
+      this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
+      this.year = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).year
+      this.categories = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).categories
+      this.subject = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).subject
+      this.paragraph = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).description
+      this.media = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).media
+      this.link = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).link
+    },
     previousProject(){
       if( this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) > 0 ){
         this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[(this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) - 1)].n } })
@@ -131,13 +130,14 @@ export default {
           padding: 5px;
           @include title-small;
         }
+        .info:last-child{
+          border-right: none;
+        }
         .link{
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-right: 1px solid $true-black;
-          border-right: none;
           background-color: $themontegreen;
           color: $true-white;
           padding: 5px;
