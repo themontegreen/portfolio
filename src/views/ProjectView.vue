@@ -79,7 +79,12 @@ export default {
       }
     },
     nextProject(){
-      console.log('next project')
+      if( this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) < (this.$content[this.$lang].projects.length - 1) ){
+        this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[(this.$content[this.$lang].projects.findIndex(({ n }) => n === parseInt(this.$route.params.id)) + 1)].n } })
+      }
+      else{
+        this.$router.push({ name: 'project', params: { id: this.$content[this.$lang].projects[0].n } })
+      }
     }
   }
 }
