@@ -27,7 +27,6 @@ coverage
 *.sln
 *.sw?
 .env
-package-lock.json
 
 # Shell files
 github-pages.sh
