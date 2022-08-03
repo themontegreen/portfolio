@@ -1,5 +1,6 @@
 <template>
   <div class="project-page" @wheel="blockScrolling" @touchmove="blockScrolling">
+    <OverlayMessage/>
     <ProjectTopBar :title="title"/>
     <div class="project-info">
       <div class="container-carousel">
@@ -27,6 +28,7 @@
 </template>
 
 <script>
+import OverlayMessage from '../components/OverlayMessage.vue'
 import ProjectTopBar from '../components/ProjectTopBar.vue'
 import ProjectShowcase from '../components/ProjectShowcase.vue'
 import ProjectBottomBar from '../components/ProjectBottomBar.vue'
@@ -47,6 +49,7 @@ export default {
     }
   },
   components: {
+    OverlayMessage,
     ProjectTopBar,
     ProjectShowcase,
     ProjectBottomBar

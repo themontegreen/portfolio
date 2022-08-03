@@ -31,7 +31,7 @@ export default {
   height: 40px;
   border-top: 1px solid $true-black;
   background-color: white;
-  z-index: 9999;
+  z-index: 9998;
   .buttons{
     display: flex;
     height: 100%;

@@ -1,9 +1,6 @@
 <template>
   <div class="homepage-container" @wheel="blockScrolling" @touchmove="blockScrolling">
-    <div class="overlay-message">
-      <div class="text">For an optimal experience, view this page in portrait mode<br/>Simply put, rotate your phone :)
-      </div>
-    </div>
+    <OverlayMessage/>
     <div class="fixed-content">
       <HeroParagraph/>
       <ScrollableArea/>
@@ -14,6 +11,7 @@
 </template>
 
 <script>
+import OverlayMessage from '../components/OverlayMessage.vue'
 import HeroParagraph from '../components/HeroParagraph.vue'
 import ScrollableArea from '../components/ScrollableArea.vue'
 import MenuFooter from '../components/MenuFooter.vue'
@@ -26,6 +24,7 @@ export default {
     }
   },
   components: {
+    OverlayMessage,
     HeroParagraph,
     ScrollableArea,
     MenuFooter,
@@ -70,15 +69,6 @@ body{
 @import './src/assets/scss/fonts.scss';
 .homepage-container{
   height: 100%;
-  .overlay-message{
-    position: fixed;
-    display: none;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: $themontegreen;
-    z-index: 1;
-  }
   .fixed-content{
     position: fixed;
     display: flex;
