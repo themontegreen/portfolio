@@ -14,7 +14,7 @@ export default {
   },
   data(){
     return{
-      loadingAnimation: true
+      loadingAnimation: this.$content[this.$lang].loading_intro.loadingAnimation
     }
   },
   methods: {

@@ -1,11 +1,11 @@
 <template>
   <div class="menufooter-container">
-    <a
+    <div
       v-for="(link,l) in links"
       :key="l"
-      :class="['link', {'green' : link.color == 'green'}]"
+      :class="['link', {'green' : link.color == 'green'}, {'selected' : link.color == 'green' && overlayOpen}]"
       v-text="link.label"
-      :href="link.link"
+      @click="clickButton(link)"
     />
   </div>
 </template>
@@ -20,11 +20,17 @@ export default {
       animationDuration: 1.2
     }
   },
+  props: ['overlayOpen'],
   created(){
     this.links = this.$content[this.$lang].footer_menu
   },
   mounted(){
     this.animate()
+  },
+  computed: {
+    emailSelected(l){
+      console.log(l)
+    }
   },
   methods: {
     animate(){
@@ -38,17 +44,24 @@ export default {
         duration: this.animationDuration,
         delay: this.animationDelay
       })
+    },
+    clickButton(link){
+      if( link.label == 'Email' )
+        this.$emit('openEmailOverlay', 'openEmailOverlay')
+      else
+        window.open(link.link, '_blank').focus()
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import './src/assets/scss/colors.scss';
 @import './src/assets/scss/fonts.scss';
 .menufooter-container{
   position: relative;
   display: flex;
+  z-index: 2;
   .link{
     position: relative;
     width: calc(100%/4);
@@ -57,7 +70,9 @@ export default {
     border-top: 1px solid $true-black;
     border-right: 1px solid $true-black;
     text-decoration: none;
+    background-color: $true-white;
     @include title-small;
+    cursor: pointer;
   }
   .link:hover{
     background-color: $true-black;
@@ -65,6 +80,10 @@ export default {
   }
   .green{
     background-color: $themontegreen;
+  }
+  .selected{
+    background-color: $true-black;
+    color: $true-white;
   }
 }
 </style>

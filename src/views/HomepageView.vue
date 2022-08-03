@@ -7,7 +7,8 @@
     <div class="fixed-content">
       <HeroParagraph/>
       <ScrollableArea/>
-      <MenuFooter/>
+      <MenuFooter v-on:openEmailOverlay="openEmailOverlay" :overlayOpen="overlayEmail"/>
+      <OverlayEmail v-if="overlayEmail" v-on:copiedEmail="copiedEmail" v-on:closeModal="closeEmailOverlay"/>
     </div>
   </div>
 </template>
@@ -16,19 +17,34 @@
 import HeroParagraph from '../components/HeroParagraph.vue'
 import ScrollableArea from '../components/ScrollableArea.vue'
 import MenuFooter from '../components/MenuFooter.vue'
+import OverlayEmail from '../components/OverlayEmail.vue'
 export default {
   data(){
     return{
+      overlayEmail: false
     }
   },
   components: {
     HeroParagraph,
     ScrollableArea,
-    MenuFooter
+    MenuFooter,
+    OverlayEmail
   },
   mounted(){
   },
   methods: {
+    openEmailOverlay(){
+      if( this.overlayEmail )
+        this.overlayEmail = false
+      else
+        this.overlayEmail = true
+    },
+    closeEmailOverlay(){
+      this.overlayEmail = false
+    },
+    copiedEmail(){
+      // timer 2s and close overlay
+    }
   }
 }
 </script>
