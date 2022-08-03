@@ -110,9 +110,11 @@
       },
       {
         "label": "Email",
-        "link": "mailto:daniel.demonteverde@gmail.com",
+        "link": "daniel.demonteverde@gmail.com",
         "hover": true,
-        "color": "green"
+        "color": "green",
+        "text": "Click anywhere to copy address",
+        "success": "Email copied :)"
       }
     ]
   }
