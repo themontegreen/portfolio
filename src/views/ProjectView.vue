@@ -1,7 +1,9 @@
 <template>
   <div class="project-page" @wheel="blockScrolling" @touchmove="blockScrolling">
     <OverlayMessage/>
-    <ProjectTopBar :title="title"/>
+    <div class="fixed-content">
+
+      <ProjectTopBar :title="title"/>
     <div class="project-info">
       <div class="container-carousel">
         <ProjectShowcase :id="id" :media="media"/>
@@ -18,12 +20,14 @@
           <a v-if="link" :href="link" class="link" target="_blank">link</a>
         </div>
         <div class="container-paragraph">
-          <div class="paragraph" v-html="paragraph">
+          <div class="paragraph" v-html="paragraph" @scroll="thisScrolling">
           </div>
         </div>
       </div>
     </div>
     <ProjectBottomBar v-on:goToPrevious="previousProject" v-on:goToNext="nextProject"/>
+
+    </div>
   </div>
 </template>
 
@@ -71,9 +75,22 @@ export default {
   },
   methods: {
     blockScrolling(e){
+      // console.log(e.targetTouches[0].target.classList.value)
       if( e.srcElement.classList.value != 'paragraph' ){
         e.preventDefault();
         e.stopPropagation();
+        return false;
+      }
+      else{
+        // console.log(e.touches.length + ' '+ e.targetTouches.length + ' '+e.target.classList.value)
+        console.log(e)
+      }
+    },
+    thisScrolling(e){
+      console.log('here')
+      if( e.srcElement.classList.value != 'paragraph' ){
+        e.preventDefault();
+        e.stopImmediatePropagation();
         return false;
       }
     },
@@ -131,17 +148,24 @@ export default {
 @import './src/assets/scss/colors.scss';
 @import './src/assets/scss/fonts.scss';
 .project-page{
-  max-height: 100vh;
-  display: flex;
+  height: 100vh;
   flex-direction: column;
+
+  .fixed-content{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .project-info{
     position: relative;
     width: 100%;
-    height: calc(100vh - 160px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 40px;
     overflow: hidden;
     .container-carousel{
       position: relative;
@@ -183,21 +207,20 @@ export default {
           text-decoration: none;
           @include title-small;
         }
-        .link:hover,:active{
+        .link:hover{
           background-color: $true-black;
           color: $true-white;
         }
       }
       .container-paragraph{
         position: relative;
-        height: calc(100% - 56px);
+        height: calc(100% - 42px);
         border-top: 1px solid $true-black;
-        padding: 8px 16px;
+        overflow: scroll;
         .paragraph{
           position: relative;
-          height: 100%;
-          overflow: scroll;
           @include paragraph;
+          padding: 8px;
         }
       }
     }

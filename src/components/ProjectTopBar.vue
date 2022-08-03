@@ -31,7 +31,7 @@ export default {
 @import './src/assets/scss/colors.scss';
 @import './src/assets/scss/fonts.scss';
 .project-top-bar{
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 40px;
   display: flex;

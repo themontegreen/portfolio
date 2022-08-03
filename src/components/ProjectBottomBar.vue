@@ -25,7 +25,7 @@ export default {
 @import './src/assets/scss/colors.scss';
 @import './src/assets/scss/fonts.scss';
 .project-bottom-bar{
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   height: 40px;
