@@ -1,5 +1,5 @@
 <template>
-  <div class="project-page">
+  <div class="project-page" @wheel="blockScrolling" @touchmove="blockScrolling">
     <ProjectTopBar :title="title"/>
     <div class="project-info">
       <div class="container-carousel">
@@ -63,9 +63,17 @@ export default {
     this.retrieveData()
   },
   mounted(){
+    this.$el.querySelector('.project-info').focus()
     this.animateLoad()
   },
   methods: {
+    blockScrolling(e){
+      if( e.srcElement.classList.value != 'paragraph' ){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    },
     retrieveData(){
       this.id = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).id
       this.title = this.$content[this.$lang].projects.find(({ n }) => n === parseInt(this.$route.params.id)).title
