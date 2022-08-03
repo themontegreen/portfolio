@@ -68,7 +68,7 @@ body{
 @import './src/assets/scss/colors.scss';
 @import './src/assets/scss/fonts.scss';
 .homepage-container{
-  height: 100%;
+  height: 100vh;
   .fixed-content{
     position: fixed;
     display: flex;
