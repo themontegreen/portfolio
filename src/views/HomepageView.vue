@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage-container">
+  <div class="homepage-container" @wheel="blockScrolling" @touchmove="blockScrolling">
     <div class="overlay-message">
       <div class="text">For an optimal experience, view this page in portrait mode<br/>Simply put, rotate your phone :)
       </div>
@@ -34,6 +34,13 @@ export default {
   mounted(){
   },
   methods: {
+    blockScrolling(e){
+      if( e.srcElement.classList.value != 'scrollable-area-container' && e.srcElement.classList.value != 'project-container' ){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    },
     openEmailOverlay(){
       if( this.overlayEmail ){
         this.closeModalAnimate = 'close'
