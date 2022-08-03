@@ -1,7 +1,7 @@
 {
   "content":{
     "loading_intro": {
-      "loadingAnimation": true,
+      "loadingAnimation": false,
       "loadingText": "Loading",
       "loadingTime": 2,
       "delayTime": 1
@@ -115,7 +115,8 @@
         "hover": true,
         "color": "green",
         "text": "Click anywhere to copy address",
-        "success": "Email copied :)"
+        "success": "Email copied :)",
+        "error": "Sorry, could not copy the email in your clipboard. Try to manually copy it!"
       }
     ]
   }

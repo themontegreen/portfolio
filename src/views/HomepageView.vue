@@ -8,7 +8,7 @@
       <HeroParagraph/>
       <ScrollableArea/>
       <MenuFooter v-on:openEmailOverlay="openEmailOverlay" :overlayOpen="overlayEmail"/>
-      <OverlayEmail v-if="overlayEmail" v-on:copiedEmail="copiedEmail" v-on:closeModal="closeEmailOverlay"/>
+      <OverlayEmail v-if="overlayEmail" :closeModalAnimate="closeModalAnimate" v-on:closeModal="closeEmailOverlay"/>
     </div>
   </div>
 </template>
@@ -21,7 +21,8 @@ import OverlayEmail from '../components/OverlayEmail.vue'
 export default {
   data(){
     return{
-      overlayEmail: false
+      overlayEmail: false,
+      closeModalAnimate: ''
     }
   },
   components: {
@@ -34,16 +35,14 @@ export default {
   },
   methods: {
     openEmailOverlay(){
-      if( this.overlayEmail )
-        this.overlayEmail = false
+      if( this.overlayEmail ){
+        this.closeModalAnimate = 'close'
+      }
       else
         this.overlayEmail = true
     },
     closeEmailOverlay(){
       this.overlayEmail = false
-    },
-    copiedEmail(){
-      // timer 2s and close overlay
     }
   }
 }
@@ -78,7 +77,7 @@ body{
     width: 100%;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 /* Mobile (Landscape) */

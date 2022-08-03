@@ -1,12 +1,13 @@
 <template>
-  <div :class="['overlayemail-content', {'copied' : copied}]" @click="copyEmail">
+  <div :class="['overlayemail-content', {'copied' : copied}]">
     <div class="email" v-text="email"/>
     <div class="text" v-text="text"/>
   </div>
 </template>
 
 <script>
-import gsap from "gsap";
+import gsap from "gsap"
+import Clipboard from "clipboard"
 export default {
   data(){
     return{
@@ -14,38 +15,63 @@ export default {
       email: String,
       text: String,
       successText: String,
-      copied: Boolean
+      errorText: String,
+      copied: Boolean,
+      clipboard: null
+    }
+  },
+  props: ['closeModalAnimate'],
+  watch: {
+    closeModalAnimate(){
+      this.animateOverlayClose(0)
     }
   },
   created(){
     this.email = this.emailBox.link
     this.text = this.emailBox.text
     this.successText = this.emailBox.success
+    this.errorText = this.emailBox.error
     this.copied = false
+
+    this.clipboard = new Clipboard('.overlayemail-content', {
+      text: () =>{
+        return this.email
+      }
+    })
+    this.clipboard.on('success', this.copyEmail)
+    this.clipboard.on('error', this.errorCopyEmail)
   },
   mounted(){
-    gsap.fromTo(".overlayemail-content", {
-        yPercent: 100,
-      },
-      {
-        yPercent: 0,
-        ease: "power3.out",
-        duration: .75
-      })
+    this.animateOverlayOpen()
   },
   methods: {
     copyEmail(){
-      navigator.clipboard.writeText(this.email)
       this.text = this.successText
       this.$emit('copiedEmail', 'copiedEmail')
       this.copied = true
+      this.animateOverlayClose(2)
+    },
+    errorCopyEmail(){
+      this.text = this.errorText
+    },
+    animateOverlayOpen(){
+      gsap.fromTo(".overlayemail-content", {
+          yPercent: 100,
+        },
+        {
+          yPercent: 0,
+          ease: "power3.out",
+          duration: .75
+        })
+    },
+    animateOverlayClose(delay){
       gsap.fromTo(".overlayemail-content", {
         yPercent: 0
       },
       {
         yPercent: 100,
         duration: 1,
-        delay: 2,
+        delay: delay,
         ease: "power3.out",
         onComplete: this.closeModal
       })
@@ -69,7 +95,7 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: $themontegreen;
-  z-index: 9999;
+  z-index: 1;
   cursor: pointer;
   .email{
     @include paragraph-small;
