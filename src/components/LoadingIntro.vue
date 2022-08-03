@@ -1,5 +1,6 @@
 <template>
   <div class="loadingintro-container">
+    <div class="loading-text" v-text="loadingText"/>
     <div class="horizontal-bar"/>
   </div>
 </template>
@@ -10,6 +11,7 @@ export default {
   data(){
     return{
       loadingTime: this.$content[this.$lang].loading_intro.loadingTime,
+      loadingText: this.$content[this.$lang].loading_intro.loadingText,
       delayTime: this.$content[this.$lang].loading_intro.delayTime
     }
   },
@@ -60,6 +62,14 @@ export default {
   height: 100vh;
   background-color: $themontegreen;
   z-index: 9999;
+  .loading-text{
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    @include paragraph;
+    color: $true-white;
+  }
   .horizontal-bar{
     position: absolute;
     top: 50%;
