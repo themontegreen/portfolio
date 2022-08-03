@@ -126,11 +126,12 @@ export default {
   .project-info{
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 40px;
+    overflow: hidden;
     .container-carousel{
       position: relative;
       height: 50%;
@@ -197,7 +198,7 @@ export default {
   .project-page{
     .project-info{
       flex-direction: row;
-      height: calc(100vh - 80px);
+      height: calc(100vh - 160px);
       .container-carousel{
         width: 45%;
         height: calc(100% - 16px);

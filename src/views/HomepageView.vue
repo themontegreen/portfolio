@@ -43,6 +43,7 @@ export default {
     },
     closeEmailOverlay(){
       this.overlayEmail = false
+      this.closeModalAnimate = ''
     }
   }
 }

@@ -32,6 +32,8 @@ export default {
     this.successText = this.emailBox.success
     this.errorText = this.emailBox.error
     this.copied = false
+  },
+  mounted(){
 
     this.clipboard = new Clipboard('.overlayemail-content', {
       text: () =>{
@@ -40,8 +42,7 @@ export default {
     })
     this.clipboard.on('success', this.copyEmail)
     this.clipboard.on('error', this.errorCopyEmail)
-  },
-  mounted(){
+
     this.animateOverlayOpen()
   },
   methods: {

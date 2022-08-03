@@ -27,11 +27,6 @@ export default {
   mounted(){
     this.animate()
   },
-  computed: {
-    emailSelected(l){
-      console.log(l)
-    }
-  },
   methods: {
     animate(){
       gsap.fromTo(".menufooter-container", {
