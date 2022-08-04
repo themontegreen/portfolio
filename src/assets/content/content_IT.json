@@ -1,7 +1,7 @@
 {
   "content":{
     "loading_intro": {
-      "loadingAnimation": true,
+      "loadingAnimation": false,
       "loadingText": "Loading",
       "loadingTime": 2,
       "delayTime": 1
