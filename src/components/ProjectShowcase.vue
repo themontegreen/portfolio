@@ -1,18 +1,11 @@
 <template>
   <div class="project-showcase">
-    <div class="media" data-flickity='{ "cellAlign": "left", "contain": true }'>
-      <img
-        v-for="(media,m) in media"
-        :key="m"
-        class="carousel-cell"
-        :src="'./img//projects/'+id+'/'+media"
-      />
+    <div class="media">
     </div>
   </div>
 </template>
 
 <script>
-import Flickity from "flickity"
 export default {
   name: "ProjectShowcase",
   props: ["id","media"],
@@ -22,11 +15,6 @@ export default {
     }
   },
   mounted(){
-    // this.flkty = new Flickity(this.$el.querySelector('.project-showcase .media'), {
-    //   // options
-    //   cellAlign: 'left',
-    //   contain: true
-    // });
   },
   methods:{
   }
@@ -44,7 +32,8 @@ export default {
   .media{
     height: 100%;
     .carousel-cell{
-      height: 200px;
+      width: 300px;
+      height: 100%;
     }
   }
 }
