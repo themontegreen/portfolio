@@ -1,11 +1,13 @@
 <template>
   <div class="project-showcase">
     <div class="media">
+      <Gallery :id="id" :media="media"/>
     </div>
   </div>
 </template>
 
 <script>
+import Gallery from '../components/Gallery.vue'
 export default {
   name: "ProjectShowcase",
   props: ["id","media"],
@@ -17,6 +19,9 @@ export default {
   mounted(){
   },
   methods:{
+  },
+  components:{
+    Gallery
   }
 }
 </script>
