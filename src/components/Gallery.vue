@@ -30,7 +30,7 @@ export default {
   },
   methods:{
     setImgInterval(){
-      this.interval = setInterval(this.updateCurrentMedia, 500)
+      this.interval = setInterval(this.updateCurrentMedia, 2000)
     },
     updateCurrentMedia(){
       if( this.currentMedia < this.media.length - 1 )

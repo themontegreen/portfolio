@@ -13,6 +13,18 @@
     },
     "projects": [
       {
+        "n": 8,
+        "id": "project-8",
+        "title": "nora",
+        "year": "2022",
+        "categories": ["ui", "dev"],
+        "subject": "GEDI x Terna",
+        "description": "Longform made for Terna + GEDI featuring the new podcast \"Nora\" by Terna. Illustrations by Giacomo Bettiol.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "link": "https://lab.gedidigital.it/gedi-visual/2022/nora-podcast-sistema-elettrico-futuro/",
+        "cover": "copertina.jpg"
+      },
+      {
         "n": 7,
         "id": "project-7",
         "title": "atlante delle conversazioni",
