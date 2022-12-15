@@ -13,6 +13,18 @@
     },
     "projects": [
       {
+        "n": 11,
+        "id": "project-11",
+        "title": "La finanza sostenibile: cos'è e come funziona",
+        "year": "2021",
+        "categories": ["ui", "dev", "dataviz"],
+        "subject": "Bper",
+        "description": "Longform designed and developed for Bper. It focuses and analyzes the different financial tools offered by Bper that promote sustainability and a positive social impact.<br/>Illustrations by Giacomo Bettiol. Research and text by Dalk.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "link": "https://il-mostro---podcast.web.app/",
+        "cover": "copertina.jpg"
+      },
+      {
         "n": 10,
         "id": "project-10",
         "title": "Il Mostro",
