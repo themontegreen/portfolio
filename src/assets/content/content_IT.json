@@ -13,6 +13,18 @@
     },
     "projects": [
       {
+        "n": 9,
+        "id": "project-9",
+        "title": "Le strade del gusto",
+        "year": "2022",
+        "categories": ["visual", "ui"],
+        "subject": "GEDI x Bea",
+        "description": "Longform disegnato per Maserati in occasione del progetto “Le strade del Gusto”, una serie di video + podcast realizzati con 6 chef in 6 regioni italiane con l’obiettivo di mettere in risalto le eccellenze culinarie.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg", "file-5.jpg"],
+        "link": "https://lab.gedidigital.it/il-gusto/2022/le-strade-del-gusto/",
+        "cover": "copertina.jpg"
+      },
+      {
         "n": 8,
         "id": "project-8",
         "title": "nora",
