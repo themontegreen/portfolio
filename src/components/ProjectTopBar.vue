@@ -48,6 +48,7 @@ export default {
     height: 100%;
     padding: 0 16px;
     @include title;
+    text-transform: lowercase;
   }
   .close-btn{
     position: relative;
