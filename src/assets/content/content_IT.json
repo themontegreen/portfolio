@@ -13,6 +13,18 @@
     },
     "projects": [
       {
+        "n": 10,
+        "id": "project-10",
+        "title": "Il Mostro",
+        "year": "2021",
+        "categories": ["ui", "dev"],
+        "subject": "Bpress, Audible",
+        "description": "Longform designed and developed as part of the promotional material of the Audible podcast “Il Mostro”, an audiobook narration following the development of the tragic events in Florence, Italy called “mostro di Firenze” and “compagni di merende”.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "link": "https://il-mostro---podcast.web.app/",
+        "cover": "copertina.jpg"
+      },
+      {
         "n": 9,
         "id": "project-9",
         "title": "Le strade del gusto",
