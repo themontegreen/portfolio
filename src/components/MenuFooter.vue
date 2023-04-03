@@ -59,7 +59,7 @@ export default {
   z-index: 2;
   .link{
     position: relative;
-    width: calc(100%/4);
+    width: calc(100%/3);
     text-align: center;
     padding: 12px 0;
     border-top: 1px solid $true-black;
