@@ -41,7 +41,6 @@ export default {
 .hero-paragraph{
   @include paragraph-big;
   position: relative;
-  width: 100%;
   padding: 16px;
   border-bottom: 1px solid $true-black;
 }
