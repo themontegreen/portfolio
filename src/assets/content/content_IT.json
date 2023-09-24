@@ -13,6 +13,42 @@
     },
     "projects": [
       {
+        "n": 14,
+        "id": "project-14",
+        "title": "Project Eternity",
+        "year": "2023",
+        "categories": ["dev", "pm"],
+        "subject": "Dalk",
+        "description": "Website designed and developed for the Eternity Project doctorate programme by Università Statale di Milano.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg"],
+        "link": "https://projecteternity.eu",
+        "cover": "copertina.jpg"
+      },
+      {
+        "n": 13,
+        "id": "project-13",
+        "title": "Ways to Be - Rinascimento",
+        "year": "2023",
+        "categories": ["ux", "pm"],
+        "subject": "Dalk x BEA",
+        "description": "Magazine designed for Rinascimento, a fashion brand owned by the Teddy Group. With a team of editors, designers and developers we created this digital magazine with content and articles targeted for Rinascimento's audience.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "link": "https://magazine.rinascimento.com",
+        "cover": "copertina.jpg"
+      },
+      {
+        "n": 12,
+        "id": "project-12",
+        "title": "Dalk website",
+        "year": "2020",
+        "categories": ["pm"],
+        "subject": "Dalk",
+        "description": "Dalk's website designed by Shiroi Studio. As project manager I supported the designer and developer during the entire process, from ideation to delivery.<br/>As of 2023 I also manage the content of this website and proceed with the necessary updates required.",
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "link": "https://datatalk.it",
+        "cover": "copertina.jpg"
+      },
+      {
         "n": 11,
         "id": "project-11",
         "title": "La finanza sostenibile: cos'è e come funziona",
@@ -162,11 +198,6 @@
       {
         "label": "Behance",
         "link": "https://www.behance.net/themontegreen",
-        "color": "white"
-      },
-      {
-        "label": "Instagram",
-        "link": "https://www.instagram.com/lesyeuxdumia/",
         "color": "white"
       },
       {
