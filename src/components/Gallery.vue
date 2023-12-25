@@ -3,7 +3,7 @@
     <transition name="slide-fade" mode="out-in">
       <div
         :key="[id,currentMedia]"
-        :style="`width: 100%;height: 100%; background-image: url('./img/projects/`+id+`/`+media[currentMedia]+`'); background-size:cover;background-position: center;`">
+        :style="`width: 100%; height: 100%; background-image: url('./img/projects/`+id+`/`+media[currentMedia]+`'); background-size:cover;background-position: center;`">
       </div>
     </transition>
   </div>
