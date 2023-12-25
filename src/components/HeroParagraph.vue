@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-paragraph" v-text="text"/>
+  <div class="hero-paragraph" v-html="text"/>
 </template>
 
 <script>
@@ -41,7 +41,10 @@ export default {
 .hero-paragraph{
   @include paragraph-big;
   position: relative;
-  padding: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid $true-black;
 }
 

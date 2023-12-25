@@ -17,7 +17,7 @@
             </span>
           </div>
           <div class="info" v-text="subject"></div>
-          <a v-if="link" :href="link" class="link" target="_blank">link</a>
+          <a v-if="link" :href="link" class="link" target="_blank">check out here</a>
         </div>
         <div class="container-paragraph">
           <div class="paragraph" v-html="paragraph" @scroll="thisScrolling">

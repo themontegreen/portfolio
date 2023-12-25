@@ -25,9 +25,9 @@ export default {
   data(){
     return{
       projects: Array,
-      animationDelay: 1,
-      animationDuration: 1,
-      staggerDuration: .5
+      animationDelay: .35,
+      animationDuration: .75,
+      staggerDuration: .25
     }
   },
   created(){

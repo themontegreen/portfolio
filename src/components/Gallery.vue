@@ -1,8 +1,11 @@
 <template>
   <div class="gallery-container">
-    <div 
-      :style="`width: 100%;height: 100%; background-image: url('./img/projects/`+id+`/`+media[currentMedia]+`'); background-size:cover;background-position: center;`">
-    </div>
+    <transition name="slide-fade" mode="out-in">
+      <div
+        :key="[id,currentMedia]"
+        :style="`width: 100%;height: 100%; background-image: url('./img/projects/`+id+`/`+media[currentMedia]+`'); background-size:cover;background-position: center;`">
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -22,6 +25,7 @@ export default {
 
   },
   updated(){
+
     if( this.interval ){
       clearInterval(this.interval)
     }
@@ -30,9 +34,10 @@ export default {
   },
   methods:{
     setImgInterval(){
-      this.interval = setInterval(this.updateCurrentMedia, 2000)
+      this.interval = setInterval(this.updateCurrentMedia, 6300)
     },
     updateCurrentMedia(){
+      console.log(this.currentMedia)
       if( this.currentMedia < this.media.length - 1 )
         this.currentMedia++
       else
@@ -50,4 +55,24 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+.slide-fade-enter-active {
+  /*transition: all .3s ease-in-out;*/
+  transition: opacity .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-leave-active {
+  transition: opacity .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  opacity: 0;
+}
+
+/*.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0;
+}
+*/
 </style>

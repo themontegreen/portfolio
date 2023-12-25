@@ -7,7 +7,7 @@
       "delayTime": 1
     },
     "hero_paragraph": {
-      "text": "Milano based designer focused in the design and development process of visual design systems, digital user experiences and digital products",
+      "text": "👋🏽 I'm Dani, i'm a queer and trans digital designer & art director based in Milan. Here is a selection of my work through the years.<br/><span style='font-size: .6em;'>this website was developed in Vue.js by me ☺️</span>",
       "animationDelay": 0,
       "animationDuration": 1.2
     },
@@ -20,7 +20,7 @@
         "categories": ["dev", "pm"],
         "subject": "Dalk",
         "description": "Website designed and developed for the Eternity Project doctorate programme by Università Statale di Milano.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg"],
+        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
         "link": "https://projecteternity.eu",
         "cover": "copertina.jpg"
       },
@@ -128,8 +128,8 @@
         "categories": ["branding", "graphic"],
         "subject": "personal",
         "description": "Playing with a pun from my surname, I experimented and created my own self branding project and built a visual design system. This project was done during my last year of university studying Communication Design, both as a mean to experiment, but also to synthesize everything I learned throughout the three years spent working on my bachelor’s degree.<br/><br/>The visual and graphic choices took inspiration from graphic design trends in Europe during the 1950s and 1960s, most specifically to the graphic styles that became popular in Germany, Italy and Switzerland, with a strong focus in typography.",
-        "media": ["file-1.jpg", "file-2.png", "file-3.png"],
-        "cover": "copertina.png"
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp"],
+        "cover": "copertina.webp"
       },
       {
         "n": 1,
