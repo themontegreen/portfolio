@@ -163,8 +163,8 @@
         "categories": ["dataviz"],
         "subject": "university",
         "description": "The final exam of the course <a style='color: black; font-weight: bold;' target='_null' href='https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2019&k_cf=19&k_corso_la=1088&k_indir=***&codDescr=054989&lang=EN&semestre=1&anno_corso=3&idItemOfferta=145648&idRiga=249737'>Aesthetics of things: Living Communicating Producing</a> called for a re-interpretation of the Bauhaus school in a modern-contemporary viewpoint. I decided to tackle the project by focusing on a series of books curated by the school called “Bauhausbücher”, published from 1923 to 1930 and part of a collaboration between L. M. Nagy and W. Gropius.<br/>The re-interpretation consisted of transfering the medium, from paper to digital (web). The key concept was the idea of responsive design, which guided the rebranding and web design phase.",
-        "media": ["file-1.jpg","file-2.jpg", "file-3.jpg", "file-4.jpg", "file-5.png", "file-6.png"],
-        "cover": "copertina.jpg"
+        "media": ["file-1.webp","file-2.webp", "file-3.webp", "file-4.webp", "file-5.webp", "file-6.webp"],
+        "cover": "copertina.webp"
       },
       {
         "n": 4,
