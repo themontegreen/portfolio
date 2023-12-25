@@ -87,7 +87,6 @@ export default {
       }
     },
     thisScrolling(e){
-      console.log('here')
       if( e.srcElement.classList.value != 'paragraph' ){
         e.preventDefault();
         e.stopImmediatePropagation();

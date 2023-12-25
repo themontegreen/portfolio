@@ -37,7 +37,6 @@ export default {
       this.interval = setInterval(this.updateCurrentMedia, 6300)
     },
     updateCurrentMedia(){
-      console.log(this.currentMedia)
       if( this.currentMedia < this.media.length - 1 )
         this.currentMedia++
       else

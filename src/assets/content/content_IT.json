@@ -13,6 +13,18 @@
     },
     "projects": [
       {
+        "n": 16,
+        "id": "project-16",
+        "title": "the grinch poster",
+        "year": "2023",
+        "categories": ["graphic", "print"],
+        "subject": "personal",
+        "description": "Merry Grinchmas! A 70x100cm poster I designed, inspired by my christmas hero, The Grinch.",
+        "media": ["copertina.webp", "file-2.webp", "file-3.webp"],
+        "link": "https://www.instagram.com/lesyeuxdumia/p/C1NzmzCt3MB/",
+        "cover": "copertina.webp"
+      },
+      {
         "n": 14,
         "id": "project-14",
         "title": "Project Eternity",
@@ -191,13 +203,18 @@
     ],
     "footer_menu": [
       {
+        "label": "Behance",
+        "link": "https://www.behance.net/themontegreen",
+        "color": "white"
+      },
+      {
         "label": "Linkedin",
         "link": "https://www.linkedin.com/in/daniel-demonteverde/",
         "color": "white"
       },
       {
-        "label": "Behance",
-        "link": "https://www.behance.net/themontegreen",
+        "label": "Instagram",
+        "link": "https://www.instagram.com/lesyeuxdumia",
         "color": "white"
       },
       {
