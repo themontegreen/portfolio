@@ -80,9 +80,9 @@
         "categories": ["visual", "ui"],
         "subject": "GEDI x Bea",
         "description": "Longform designed for Maserati during the official launch of the editorial project “Le strade del Gusto”. A series that comprises 6 web episodes + podcasts featuring 6 different italian regions and italian chefs as a way to highlight the italian culinary experience and excellence, trademarks of Made in Italy.<br/>Dev by Matteo Sacchi.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg", "file-5.jpg"],
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp", "file-5.webp"],
         "link": "https://lab.gedidigital.it/il-gusto/2022/le-strade-del-gusto/",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 8,
