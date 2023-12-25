@@ -174,8 +174,8 @@
         "categories": ["visual"],
         "subject": "final synthesis studio",
         "description": "While working on my bachelor’s degree I was part of the initiatives of the university association <a target='_blank' style='font-weight: 900; color: black;' href='https://www.instagram.com/poliedro.polimi'>Poliedro</a>, an association that focused on various LGBTQ+ centered themes.<br/>Aside from being an active member (until September 2019), I worked on some of the communication and promotional materials of the different seminars and meetings. This included physical printed materials (posters that were shown around both campus Leonardo and campus Bovisa) and social media content (on Facebook and Instagram).<br/><br/>The design aspect of these materials always started with a preliminary research on the theme of the individual seminar. The visual language chosen was both photographic and illustrative, with a strong focus on typography.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg"],
-        "cover": "copertina.jpg"
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
+        "cover": "copertina.webp"
       },
       {
         "n": 5,
@@ -185,8 +185,8 @@
         "categories": ["branding", "graphic"],
         "subject": "history of contemp. art",
         "description": "A visual research tackling the theme of vulnerability represented by the male body. The male body has always been associated with power, success and firmness, both physical and psychological. This project was my take on the opposite idea.<br/>I believe men can show vulnerability, and should show it more often instead of hiding it.<br/>Vulnerability is not a sign of weakness, rather it is a sign of unfathomable power and emotional resilience.<br/><br/>The project explores this theme by featuring photographs from contemporary photographer and artists such as Nan Goldin, Robert Mapplethorpe, and Fabio Da Motta.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg", "file-4.jpg","file-5.jpg", "file-6.jpg", "file-7.jpg", "file-8.jpg", "file-9.jpg"],
-        "cover": "copertina.jpg"
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp","file-5.webp", "file-6.webp", "file-7.webp", "file-8.webp", "file-9.webp"],
+        "cover": "copertina.webp"
       }
     ],
     "footer_menu": [
