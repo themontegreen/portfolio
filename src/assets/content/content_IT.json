@@ -20,9 +20,9 @@
         "categories": ["dev", "pm"],
         "subject": "Dalk",
         "description": "Website designed and developed for the Eternity Project doctorate programme by Università Statale di Milano.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp"],
         "link": "https://projecteternity.eu",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 13,
@@ -32,9 +32,9 @@
         "categories": ["ux", "pm"],
         "subject": "Dalk x BEA",
         "description": "Magazine designed for Rinascimento, a fashion brand owned by the Teddy Group. With a team of editors, designers and developers we created this digital magazine with content and articles targeted for Rinascimento's audience.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp"],
         "link": "https://magazine.rinascimento.com",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 12,
@@ -44,9 +44,9 @@
         "categories": ["pm"],
         "subject": "Dalk",
         "description": "Dalk's website designed by Shiroi Studio. As project manager I supported the designer and developer during the entire process, from ideation to delivery.<br/>As of 2023 I also manage the content of this website and proceed with the necessary updates required.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp"],
         "link": "https://datatalk.it",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 11,
@@ -68,9 +68,9 @@
         "categories": ["ui", "dev"],
         "subject": "Bpress, Audible",
         "description": "Longform designed and developed as part of the promotional material of the Audible podcast “Il Mostro”, an audiobook narration following the development of the tragic events in Florence, Italy called “mostro di Firenze” and “compagni di merende”.",
-        "media": ["file-1.jpg", "file-2.jpg", "file-3.jpg"],
+        "media": ["file-1.webp", "file-2.webp", "file-3.webp"],
         "link": "https://il-mostro---podcast.web.app/",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 9,
@@ -139,9 +139,9 @@
         "categories": ["ui", "ux", "dev"],
         "subject": "Iconsulting",
         "description": "A longform designed for the client Iconsulting. The truth between the lines analyzes the phenomenon of fake news. This subject was explored in five different chapter: the first four explain the theories and provide key examples that happened in real life. The fifth and last chapter presents a possible solution provided by the client to avoid the proliferation of fake news.<br/><br/>In this project I worked on the visual design aspects of the longform (interface, choosing the audio and visual material, interactive infographics) as well as the development and publishing of the longform.",
-        "media": ["file-1.jpg"],
+        "media": ["file-1.webp"],
         "link": "https://fakenews.iconsulting.biz/#/pagina-iniziale",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 2,
@@ -151,9 +151,9 @@
         "categories": ["dataviz"],
         "subject": "personal",
         "description": "This data visualization project is a visual representation of the complexity of the album 'OIL OF EVERY PEARL'S UN-INSIDES' by SOPHIE. Following the accident that ended her life prematurely on January 2021, she remains one of the forefront artists in the Pc Music and Hyperpop universe, contributed to pushing the boundaries of EDM music and Pop.<br/>Using the Spotify API I extracted the track analysis data of all 9 tracks to create a visualization that represented most SOPHIE's aesthetic and artistry. The 9 tracks have been envisioned as 9 'hypergems' that are a part of a single cohesive 'hyperspace', representative of SOPHIE's approach to fluidity, multiform and complex worlds. Each single hypergem is a glyph, built on 4 different axis that fully represent the complexity of the EDM track, in a yet anamorphic shape that is created digitally using four digital parameters dictated by an artificial intelligence algorythm.",
-        "media": ["file-1.jpg"],
+        "media": ["file-1.webp"],
         "link": "https://www.behance.net/gallery/117451391/OIL-OF-EVERY-PEARLS-UN-INSIDES-SOPHIESHYPERSPACE",
-        "cover": "copertina.jpg"
+        "cover": "copertina.webp"
       },
       {
         "n": 3,
