@@ -21,6 +21,7 @@
         "subject": "dalk",
         "description": "A digital magazine designed and developed for Federdistribuzione, an italian leading business operating in modern retail distribution.<br/>The main goal of this project was raising brand equity and the brand’s presence online.<br/>Developed in Wordpress and powered by Elementor.",
         "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp"],
+        "link": "https://noidistribuzione.it/",
         "cover": "copertina.webp"
       },
       {
@@ -32,6 +33,7 @@
         "subject": "dalk",
         "description": "This visual novel for Terna features illustrations from Giacomo Bettiol, a local milanese illustrator. This website was designed for Terna’s new season of their podcast where they tackle themes such as global warming and sustainability.<br/>In Dalk I designed this visual digital novel that would be part of the marketing campaign for this new podcast.<br/>The final product was designed and exported from Webflow, and hosted in the clients’ CMS.",
         "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
+        "link": "https://terna-nora-2.webflow.io/",
         "cover": "copertina.webp"
       },
       {
@@ -43,6 +45,7 @@
         "subject": "dalk",
         "description": "This longform content project was designed in Webflow for Forward You, an insurance company that requested to design a longform article with insights and data visualizations regarding long-term investments.<br/>The longform was designed in Figma and developed using Webflow. The launched website was exported and self hosted by the client.",
         "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
+        "link": "forward-you.webflow.io",
         "cover": "copertina.webp"
       },
       {
