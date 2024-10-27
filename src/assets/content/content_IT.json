@@ -13,6 +13,50 @@
     },
     "projects": [
       {
+        "n": 21,
+        "id": "project-21",
+        "title": "noidistribuzione",
+        "year": "2023 - current",
+        "categories": ["web", "wordpress"],
+        "subject": "dalk",
+        "description": "A digital magazine designed and developed for Federdistribuzione, an italian leading business operating in modern retail distribution.<br/>The main goal of this project was raising brand equity and the brand’s presence online.<br/>Developed in Wordpress and powered by Elementor.",
+        "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp"],
+        "cover": "copertina.webp"
+      },
+      {
+        "n": 20,
+        "id": "project-20",
+        "title": "nora visual novel",
+        "year": "2024",
+        "categories": ["web", "motion"],
+        "subject": "dalk",
+        "description": "This visual novel for Terna features illustrations from Giacomo Bettiol, a local milanese illustrator. This website was designed for Terna’s new season of their podcast where they tackle themes such as global warming and sustainability.<br/>In Dalk I designed this visual digital novel that would be part of the marketing campaign for this new podcast.<br/>The final product was designed and exported from Webflow, and hosted in the clients’ CMS.",
+        "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
+        "cover": "copertina.webp"
+      },
+      {
+        "n": 19,
+        "id": "project-19",
+        "title": "forward you",
+        "year": "2024",
+        "categories": ["web", "ui"],
+        "subject": "dalk",
+        "description": "This longform content project was designed in Webflow for Forward You, an insurance company that requested to design a longform article with insights and data visualizations regarding long-term investments.<br/>The longform was designed in Figma and developed using Webflow. The launched website was exported and self hosted by the client.",
+        "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
+        "cover": "copertina.webp"
+      },
+      {
+        "n": 18,
+        "id": "project-18",
+        "title": "webflow’s potential for dalk",
+        "year": "2023",
+        "categories": ["dataviz", "strategy"],
+        "subject": "dalk",
+        "description": "A series of infographics I used in a report sent to our team analyzing the pre-existing project we work on and the potential Webflow could bring in different parts of our design and development process.<br/>We ended up implementing Webflow successfully in our team.",
+        "media": ["copertina.webp", "file-1.webp"],
+        "cover": "copertina.webp"
+      },
+      {
         "n": 17,
         "id": "project-17",
         "title": "breathing glass",
