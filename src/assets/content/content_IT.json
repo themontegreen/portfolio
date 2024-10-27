@@ -20,7 +20,7 @@
         "categories": ["web", "3d"],
         "subject": "personal",
         "description": "An animated composition made in Spline 3D + Webflow",
-        "media": ["copertina.webp"],
+        "media": ["copertina.webp", "file-1.webp", "file-2.webp"],
         "link": "https://breathing-glass.webflow.io/",
         "cover": "copertina.webp"
       },
