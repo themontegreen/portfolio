@@ -7,11 +7,23 @@
       "delayTime": 1
     },
     "hero_paragraph": {
-      "text": "👋🏽 I'm Mia (she/her & formerly known Daniel), i'm a queer and trans designer & digital art director based in Milan. Here is a selection of my work through the years.<br/><span style='font-size: .6em;'>👾 This website was developed in Vue.js by me</span>",
+      "text": "👋🏽 I'm Dani (she/her & formerly known Daniel), i'm a queer and trans designer & digital art director based in Milan. Here is a selection of my work through the years.<br/><span style='font-size: .6em;'>👾 This website was developed in Vue.js by me</span>",
       "animationDelay": 0,
       "animationDuration": 1.2
     },
     "projects": [
+      {
+        "n": 17,
+        "id": "project-17",
+        "title": "breathing glass",
+        "year": "2024",
+        "categories": ["web", "3d"],
+        "subject": "personal",
+        "description": "An animated composition made in Spline 3D + Webflow",
+        "media": ["copertina.webp"],
+        "link": "https://breathing-glass.webflow.io/",
+        "cover": "copertina.webp"
+      },
       {
         "n": 16,
         "id": "project-16",
@@ -215,8 +227,8 @@
     ],
     "footer_menu": [
       {
-        "label": "Behance",
-        "link": "https://www.behance.net/themontegreen",
+        "label": "Bento",
+        "link": "https://bento.me/miademonteverde",
         "color": "white"
       },
       {
@@ -226,7 +238,7 @@
       },
       {
         "label": "Instagram",
-        "link": "https://www.instagram.com/lesyeuxdumia",
+        "link": "https://www.instagram.com/miademonteverde/",
         "color": "white"
       },
       {
