@@ -7,7 +7,7 @@
       "delayTime": 1
     },
     "hero_paragraph": {
-      "text": "👋🏽 I'm Dani (she/her, aka Mia), i'm a queer and trans designer & digital art director based in Milan. Here is a selection of my work through the years.<br/><span style='font-size: .6em;'>👾 This website was developed in Vue.js by me</span>",
+      "text": "👋🏽 I'm Dani (she/her), i'm a designer & digital art director based in Milan. Here is a selection of my work through the years.<br/><span style='font-size: .6em;'>👾 This website was developed in Vue.js by me</span>",
       "animationDelay": 0,
       "animationDuration": 1.2
     },
@@ -80,7 +80,7 @@
         "subject": "personal",
         "description": "Merry Grinchmas! A 70x100cm poster I designed, inspired by my christmas hero, The Grinch.",
         "media": ["copertina.webp", "file-2.webp", "file-3.webp"],
-        "link": "https://www.instagram.com/lesyeuxdumia/p/C1NzmzCt3MB/",
+        "link": "https://www.instagram.com/danidemonteverde/p/C1NzmzCt3MB/",
         "cover": "copertina.webp"
       },
       {
@@ -92,7 +92,7 @@
         "subject": "personal",
         "description": "What if GAG City were real? Building a visual identity for a fictional place, born through a meme alongside the release of Pink Friday 2 by Nicki Minaj.",
         "media": ["copertina.webp"],
-        "link": "https://www.instagram.com/lesyeuxdumia/p/C0_q1XvM51A/",
+        "link": "https://www.instagram.com/danidemonteverde/p/C0_q1XvM51A/",
         "cover": "copertina.webp"
       },
       {
@@ -275,7 +275,7 @@
     "footer_menu": [
       {
         "label": "Bento",
-        "link": "https://bento.me/miademonteverde",
+        "link": "https://bento.me/danidemonteverde",
         "color": "white"
       },
       {
@@ -285,7 +285,7 @@
       },
       {
         "label": "Instagram",
-        "link": "https://www.instagram.com/miademonteverde/",
+        "link": "https://www.instagram.com/danidemonteverde/",
         "color": "white"
       },
       {
