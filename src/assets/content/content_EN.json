@@ -8,7 +8,7 @@
         "year": "2022",
         "categories": ["dataviz", "ui", "dev"],
         "subject": "Dalk",
-        "description": "A data visualization project based on results obtained through data scraping on themes/trends during the year 2021. This project serves as a creative tool to visualize and examine the discussions that are happening online. Designed both for print and digital.",
+        "description": "A data visualization project based on results obtained through data scraping on themes/trends during the year 2021. This project hello serves as a creative tool to visualize and examine the discussions that are happening online. Designed both for print and digital.",
         "media": ["file-1.jpg"],
         "link": "atlantedelleconversazioni.it",
         "cover": "copertina.jpeg"
