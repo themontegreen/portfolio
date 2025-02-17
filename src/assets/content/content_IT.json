@@ -37,18 +37,6 @@
         "cover": "copertina.webp"
       },
       {
-        "n": 19,
-        "id": "project-19",
-        "title": "forward you",
-        "year": "2024",
-        "categories": ["web", "ui"],
-        "subject": "dalk",
-        "description": "This longform content project was designed in Webflow for Forward You, an insurance company that requested to design a longform article with insights and data visualizations regarding long-term investments.<br/>The longform was designed in Figma and developed using Webflow. The launched website was exported and self hosted by the client.",
-        "media": ["copertina.webp", "file-1.webp", "file-2.webp", "file-3.webp", "file-4.webp"],
-        "link": "https://forward-you.webflow.io",
-        "cover": "copertina.webp"
-      },
-      {
         "n": 18,
         "id": "project-18",
         "title": "webflow’s potential for dalk",
